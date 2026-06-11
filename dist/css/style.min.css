@@ -12774,10 +12774,10 @@ textarea.form-control-lg {
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
-  --font-family: "Montserrat", sans-serif;
+  --font-family: "helveticaneuecyr";
   --outline: #e3ebf2;
-  --main-color: #333;
-  --black: #333;
+  --main-color: #000;
+  --black: #000;
   --background: #f3f7fd;
   --success: #27c340;
   --error: #e02828;
@@ -12807,6 +12807,13 @@ textarea.form-control-lg {
 }
 
 /* stylelint-disable */
+@font-face {
+  font-family: helveticaneuecyr;
+  font-display: swap;
+  src: url("../fonts/helveticaneuecyr-light.woff2") format("woff2"), url("../fonts/helveticaneuecyr-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 html {
   box-sizing: border-box;
 }
@@ -13347,4 +13354,75 @@ h3,
 }
 .tabs__panel--active {
   display: block;
+}
+
+.headerW {
+  display: flex;
+}
+.headerNav > ul {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.headerNav > ul > li > a {
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: text-decoration-color 0.2s linear;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+}
+.headerNav > ul > li > a:hover {
+  text-decoration-color: var(--main-color);
+}
+.headerNav .searchWContainer {
+  display: none;
+}
+@media (max-width: 991px) {
+  .headerNav .searchWContainer {
+    display: flex;
+  }
+}
+.header .burger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.header .burger .line {
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.headerNavCloseW {
+  display: none;
+}
+@media (max-width: 991px) {
+  .headerNavCloseW {
+    display: flex;
+  }
+}
+
+.headerAction {
+  display: flex;
+  column-gap: 70px;
+  align-items: center;
+}
+.headerAction .searchW {
+  display: none;
+}
+
+.headerAction ul {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+.headerAction ul li a svg, .headerAction ul li button svg {
+  width: 20px;
+  height: 20px;
 }

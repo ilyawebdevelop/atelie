@@ -7,17 +7,17 @@ $bold: 700;
 $extrabold: 800;
 $black: 900;
 
- // Containers
-:root { 
+// Containers
+:root {
   --content-width: 1820px;
   --content-fluid-width: 1700px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
-  --font-family: 'Montserrat', sans-serif;
+  --font-family: 'helveticaneuecyr';
   --outline: #e3ebf2;
-  --main-color: #333;
-  --black: #333;
+  --main-color: #000;
+  --black: #000;
   --background: #f3f7fd;
   --success: #27c340;
   --error: #e02828;
