@@ -878,7 +878,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  line-height: normal;
+  line-height: 140%;
 }
 
 html {
@@ -904,8 +904,8 @@ table {
 }
 
 section {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 @media (max-width: 991px) {
   section {
@@ -927,6 +927,31 @@ section {
 
 .pb-5 {
   padding-bottom: 5px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-130 {
+  margin-bottom: 130px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .w-fit {
@@ -1057,14 +1082,13 @@ h6,
 .h6 {
   font-family: var(--font-family);
   color: var(--main-color);
-  font-weight: 600;
   line-height: normal;
+  font-weight: 300;
 }
 
 h1,
 .h1 {
   font-size: 36px;
-  font-weight: 800;
 }
 @media (max-width: 1199px) {
   h1,
@@ -1076,6 +1100,7 @@ h1,
 h2,
 .h2 {
   font-size: 32px;
+  font-weight: 300;
 }
 @media (max-width: 1199px) {
   h2,
@@ -1087,6 +1112,7 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
+  font-weight: 300;
 }
 @media (max-width: 1199px) {
   h3,
@@ -1101,6 +1127,10 @@ h3,
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-end {
@@ -1448,4 +1478,110 @@ h3,
 }
 .intro .navArrowNext {
   right: calc((100vw - 1780px) / 2);
+}
+
+.dirW {
+  display: flex;
+  align-items: center;
+  column-gap: 70px;
+  padding-left: calc((100vw - 1780px) / 2);
+}
+.dirPerson {
+  flex-shrink: 0;
+  position: relative;
+}
+.dirPersonTitle {
+  font-size: 24px;
+  line-height: normal;
+  max-width: 250px;
+}
+.dirPersonWork {
+  color: #6b6b6b;
+  line-height: normal;
+}
+.dirPersonLine {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 440px;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+}
+.dirPersonLine::before {
+  content: "";
+  width: 139px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+}
+.dirPersonLine::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dirPersonContent {
+  position: absolute;
+  bottom: 50px;
+  left: -300px;
+}
+.dirImage {
+  width: 800px;
+  height: calc(100vh - 94px);
+  object-fit: cover;
+}
+.dir .content {
+  padding-left: 200px;
+}
+
+.unical {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #F8F9F4;
+}
+.unicalW {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 50px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.unicalW .col {
+  grid-column: 4 span;
+}
+.unicalItem h3 {
+  margin-bottom: 20px;
+}
+.unicalItemImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.servicesSlider {
+  width: 100%;
+}
+.servicesSlide > img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.servicesSlideTitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.servicesSliderW {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
 }

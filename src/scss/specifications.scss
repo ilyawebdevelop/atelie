@@ -21,7 +21,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  line-height: normal;
+  line-height: 140%;
 
 }
 
@@ -48,8 +48,8 @@ table {
 }
 
 section {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 
   @media(max-width: 991px) {
     padding-bottom: 35px;
@@ -66,15 +66,44 @@ section {
     padding-top: 0;
   }
 }
+
 .d-block {
   display: block;
 }
+
 .pb-5 {
   padding-bottom: 5px;
 }
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-130 {
+  margin-bottom: 130px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .w-fit {
   width: fit-content;
 }
+
 .formInput {
   height: 50px;
   border-radius: 5px;
@@ -208,14 +237,13 @@ h6,
 .h6 {
   font-family: var(--font-family);
   color: var(--main-color);
-  font-weight: 600;
   line-height: normal;
+  font-weight: 300;
 }
 
 h1,
 .h1 {
   font-size: 36px;
-  font-weight: 800;
 
   @media(max-width: 1199px) {
     font-size: 24px;
@@ -225,6 +253,7 @@ h1,
 h2,
 .h2 {
   font-size: 32px;
+  font-weight: 300;
 
   @media(max-width: 1199px) {
     font-size: 20px;
@@ -234,6 +263,7 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
+  font-weight: 300;
 
   @media (max-width: 1199px) {
     font-size: 16px;
@@ -243,15 +273,23 @@ h3,
 .underline {
   text-decoration: underline;
 }
+
 .text-uppercase {
   text-transform: uppercase;
 }
+
+.text-center {
+  text-align: center;
+}
+
 .text-end {
   text-align: end;
 }
+
 .border-link {
   border-bottom: 1px solid #fff
 }
+
 .color-white {
   color: #fff;
 }
@@ -319,6 +357,7 @@ h3,
     pointer-events: none;
   }
 }
+
 .swiper-pagination {
   &-bullet {
     width: 34px;
@@ -327,6 +366,7 @@ h3,
     border-radius: 0;
     border-radius: 5px;
     background-color: rgba($color: #fff, $alpha: .3);
+
     &-active {
       background-color: #fff;
     }

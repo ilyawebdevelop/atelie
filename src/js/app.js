@@ -37,4 +37,30 @@ var mySwiperIntro = new Swiper(introSlider, {
   },
 });
 
-
+// Инициализация слайдера servicesSlider
+document.querySelectorAll('.servicesSlider').forEach(n => {
+  const mySwiperServices = new Swiper(n, {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    speed: 600,
+    autoplay: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+});

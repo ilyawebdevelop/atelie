@@ -1,0 +1,27 @@
+.unical {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #F8F9F4;
+  &W {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 50px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .col {
+      grid-column: 4 span;
+    }
+  }
+  &Item {
+    h3 {
+      margin-bottom: 20px;
+    }
+    &Image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+}
