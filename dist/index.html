@@ -15,16 +15,17 @@
 </head>
 
 <body>
-	
+
 	<div class="wrapper">
 		<!-- Header -->
 <header class="header" id="header" style="font-size: 14px; text-transform: uppercase;">
   <div class="container">
     <div class="headerW">
-      <a href="#" class="headerLogo logo">
-        <img src="img/admin/logo/logo.svg" alt="logo">
-      </a>
- 
+      <div class="headerL">
+        <a href="#" class="headerLogo logo">
+          <img src="img/admin/logo/logo.svg" alt="logo">
+        </a>
+      </div>
       <nav class="headerNav">
   <div class="headerNavCloseW">
     <div class="headerNavClose" id="headerNavMobileClose">
@@ -144,16 +145,59 @@
       </a>
     </li>
   </ul>
-  <div class="burger">
+  <button class="burger" type="button">
     <div class="line"></div>
     <div class="line"></div>
-  </div>
+  </button>
 </div>
     </div>
   </div>
 </header>
-		<main class="main">		
-			
+		<main class="main">
+			<section class="sect pt-0 pb-0 intro">
+  <div class="swiper introSlider">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide introSlide" style="background-image: url('img/admin/intro/image-1.jpg');">
+        <div class="introSlideContent">
+          <div class="introSlideTitle color-white text-uppercase text-end">
+            Ателье Alitsiya Andreeva — <br>
+            пошив одежды на заказ в Москве
+          </div>
+          <div class="introSlideText color-white">
+            <div class="introSlideList">
+              <ul>
+                <li>Пошив дизайнерской одежды из меха и кожи</li>
+                <li>Изготовление авторских аксессуаров</li>
+                <li>Реставрация и ремонт изделий из кожи и меха</li>
+              </ul>
+            </div>
+            <a class="text-uppercase fz-14 border-link d-block pb-5 w-fit" href="#">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide introSlide" style="background-image: url('img/admin/intro/image-2.jpg');">
+        <div class="introSlideContent">
+          <div class="introSlideTitle color-white text-uppercase text-end">
+            Ателье Alitsiya Andreeva
+          </div>
+          <div class="introSlideText color-white">        
+            <a class="text-uppercase fz-14 border-link d-block pb-5 w-fit" href="#">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="navArrow navArrowPrev" type="button">
+      <img src="img/icons/slider-prev.svg" alt="arrow">
+    </button>
+    <button class="navArrow navArrowNext" type="button">
+      <img src="img/icons/slider-next.svg" alt="arrow">
+    </button>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
@@ -196,15 +240,9 @@
 </div>
 
 	</div>
-	
+
 	<script src="js/app.min.js"></script>
 
-
-	
 </body>
 
 </html>
-
-
-
-

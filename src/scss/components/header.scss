@@ -1,8 +1,33 @@
 // Header
 .header {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #f3f3f3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 111;
+
   &W {
     display: flex;
+    align-items: center;
   }
+
+  &L {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+  }
+
+  &Action {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+  }
+
   &Nav {
     &>ul {
       display: flex;
@@ -24,17 +49,21 @@
         }
       }
     }
+
     .searchWContainer {
       display: none;
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         display: flex;
       }
     }
   }
+
   .burger {
     display: flex;
     flex-direction: column;
     row-gap: 7px;
+
     .line {
       width: 40px;
       height: 1px;
@@ -47,27 +76,36 @@
 .sub-menu {
   display: none;
 }
-.headerNavCloseW{
+
+.headerNavCloseW {
   display: none;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     display: flex;
   }
 }
+
 .headerAction {
   display: flex;
   column-gap: 70px;
   align-items: center;
-  .searchW{
+  justify-content: flex-end;
+
+  .searchW {
     display: none;
   }
 }
+
 .headerAction {
   ul {
     display: flex;
     align-items: center;
     column-gap: 25px;
+
     li {
-      a,button {
+
+      a,
+      button {
         svg {
           width: 20px;
           height: 20px;
